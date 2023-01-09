@@ -1,9 +1,22 @@
 import React, { Component } from 'react'
+import Chart from "../../Components/Chart";
+import Table from "../../Components/Table";
 
 export default class Donut extends Component {
   render() {
     return (
-      <div>Donut</div>
+      <>
+        <div className="container">
+          <div className="row my-5">
+            <div className="col-12 col-lg-6">
+              <Table />
+            </div>
+            <div className="col-lg-6">
+              <Chart />
+            </div>
+          </div>
+        </div>
+      </>
     )
   }
 }
