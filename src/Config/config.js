@@ -1,0 +1,1 @@
+export const DATA_URL = "https://data.townofcary.org/api/v2/catalog/datasets/rdu-weather-history/exports/json"
