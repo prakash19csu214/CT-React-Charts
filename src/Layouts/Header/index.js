@@ -21,7 +21,7 @@ class Header extends Component {
   render() {
     return (
       <>
-        <Navbar expand="lg header-top bg-white fixed-top">
+        <Navbar expand="lg header-top bg-white">
           <div className="container">
             <button
               onClick={this.toggleNav}

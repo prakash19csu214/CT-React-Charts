@@ -41,16 +41,16 @@ function Footer() {
             <p> <b> Catagories </b></p>
             <ul className="list-unstyled">
               <li>
-                <a to="/bar">See Charts in Bar Style</a>
+                <a href="/bar">Bar Style</a>
               </li>
               <li>
-                <a to="/line">See Charts in Line Style</a>
+                <a href="/line">Line Style</a>
               </li>
               <li>
-                <a to="/pie">See Charts in Pie Style</a>
+                <a href="/pie">Pie Style</a>
               </li>
               <li>
-                <a to="/donut">See Charts in Donut Style</a>
+                <a href="/donut">Donut Style</a>
               </li>
             </ul>
           </div>
@@ -76,8 +76,9 @@ function Footer() {
       </div>
     </div>
     <div className="footer-btm">
-    <div className="row align-items-bottom p5">
-          <div className="offset-2 col-12 col-sm-4">
+    <div className="container">
+    <div className="row align-items-bottom">
+          <div className="col-12 col-sm-6 justify-content-center d-flex">
             <p>©Webecy - All Rights Reserved</p>
           </div>
           <div className="col-12 col-sm-6">
@@ -102,6 +103,7 @@ function Footer() {
                 <i className="fa fa-twitter"></i>
               </a>
             </div>
+          </div>
           </div>
         </div>
     </div>
