@@ -1,7 +1,8 @@
 import React from "react";
 import "./index.css";
 
-function Table() {
+function Table(props) {
+  
   return (
     <>
       <div className="heading">Table</div>
@@ -9,7 +10,7 @@ function Table() {
       <table class="table table-striped my-4">
         <thead>
           <tr>
-            <th scope="col">Date</th>
+            <th scope="col">#</th>
             <th scope="col">Max Temperature</th>
             <th scope="col">Min Temperature</th>
             <th scope="col">Precipitation</th>
@@ -20,7 +21,7 @@ function Table() {
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
+            <th scope="row">{props.props[0].date}</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
