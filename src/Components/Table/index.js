@@ -3,6 +3,8 @@ import "./index.css";
 
 function Table(props) {
   
+  const data = props.props
+
   return (
     <>
       <div className="heading">Table</div>
@@ -10,7 +12,7 @@ function Table(props) {
       <table class="table table-striped my-4">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">Date</th>
             <th scope="col">Max Temperature</th>
             <th scope="col">Min Temperature</th>
             <th scope="col">Precipitation</th>
@@ -20,7 +22,18 @@ function Table(props) {
           </tr>
         </thead>
         <tbody>
-          <tr>
+        {data.map(item => (
+                    <tr key={item.date}>
+                      <th scope="row">{item.date}</th>
+                        <td>{item.tmin}</td>
+                        <td>{item.tmax}</td>
+                        <td>{item.prcp}</td>
+                        <td>{item.snow}</td>
+                        <td>{item.snwd}</td>
+                        <td>{item.awnd}</td>
+                    </tr>
+                ))}
+          {/* <tr>
             <th scope="row">{props.props[0].date}</th>
             <td>Mark</td>
             <td>Otto</td>
@@ -28,7 +41,7 @@ function Table(props) {
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
-          </tr>
+          </tr> */}
         </tbody>
       </table>
       </div>
