@@ -8,10 +8,10 @@ export class Line extends Component {
       <>
         <div className="container">
           <div className="row my-5">
-            <div className="col-12 col-lg-6">
+            <div className="col-12 my-2">
               <Table />
             </div>
-            <div className="col-lg-6">
+            <div className="col-12 my-2">
               <Chart />
             </div>
           </div>
