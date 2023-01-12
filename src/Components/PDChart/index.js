@@ -12,7 +12,7 @@ function PDChart({chartType}) {
 
   useEffect(() => {
         const chartData = {
-        series: data.map(item => item.tmin),
+        series: data.map(item => item.awnd),
         chart: {
             width: 380,
             type: "pie"

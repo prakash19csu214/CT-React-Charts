@@ -45,7 +45,7 @@ export class Main extends Component {
           <Route path="/line" component={Line} />
           <Route path="/donut" component={Donut} />
           <Route path="/pie" component={Pie} />
-          <Redirect to="/bar" />
+          <Redirect to="/home" />
         </Switch>
         </GetData.Provider>
         <Footer />

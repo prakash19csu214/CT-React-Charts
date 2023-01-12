@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PDChart from '../../Components/PDChart';
-import Table from "../../Components/Table";
 
 export class Pie extends Component {
 

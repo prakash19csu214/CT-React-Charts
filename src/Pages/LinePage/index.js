@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import MyChart from "../../Components/Chart";
-import Table from "../../Components/Table";
 
 export class Line extends Component {
   render() {
