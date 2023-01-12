@@ -3,7 +3,7 @@ import "./index.css";
 
 function Table(props) {
   
-  const data = props.props.slice(10)
+  const data = props.props
 
   return (
     <>

@@ -5,13 +5,17 @@ function MyChart(props) {
 
   const [chartData, setChartData] = useState({});
 
-  const data = props.props.slice(10);
+  const data = props.props.slice(0, 100);
 
   useEffect(() => {
         const chartData = {
           series: [{
-            name: 'Data',
+            name: 'Minimum Temperature',
             data: data.map(item => item.tmin)
+          },
+          {
+            name: 'Maximum Temperature',
+            data: data.map(item => item.tmax)
           }],
           options: {
             xaxis: {
@@ -25,9 +29,9 @@ function MyChart(props) {
   return (
     <>
     <div className="heading my-2">Chart</div>
-    <div>
+    <div style={{'overflow-x': 'scroll'}}>
       {chartData.series && 
-        <Chart options={chartData.options} series={chartData.series} type="bar" width="5000" />
+        <Chart options={chartData.options} series={chartData.series} type="bar" width="5000px" height="500px" />
       }
     </div>
     </>
