@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GetData } from "../../Layouts/Main";
 import "./index.css";
 
 function Table(props) {
   
-  const data = props.props
+  const data = useContext(GetData);
 
   return (
     <>

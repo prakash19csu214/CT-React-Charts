@@ -1,11 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Chart from 'react-apexcharts';
+import { GetData } from '../../Layouts/Main';
 
 function MyChart(props) {
 
-  const [chartData, setChartData] = useState({});
+  const ddata = useContext(GetData);
+  console.log(ddata)
+  const data = ddata.slice(0, 100);
 
-  const data = props.props.slice(0, 100);
+
+  const [chartData, setChartData] = useState({});
 
   useEffect(() => {
         const chartData = {
