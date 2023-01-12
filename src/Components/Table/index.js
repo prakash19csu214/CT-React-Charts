@@ -8,7 +8,7 @@ function Table(props) {
   return (
     <>
       <div className="heading">Table</div>
-      <div class="table-responsive">
+      <div class="table-responsive" style={{'overflow':'scroll', 'height':'350px'}}>
       <table class="table table-striped my-4">
         <thead>
           <tr>
