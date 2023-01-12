@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import MyChart from "../../Components/Chart";
+import PDChart from '../../Components/PDChart';
 import Table from "../../Components/Table";
 
 export class Pie extends Component {
+
   render() {
     return (
       <>
@@ -12,7 +13,7 @@ export class Pie extends Component {
               <Table />
             </div>
             <div className="col-12 my-2">
-            <MyChart chartType="pie"/>
+            <PDChart chartType="pie"/>
             </div>
           </div>
         </div>
