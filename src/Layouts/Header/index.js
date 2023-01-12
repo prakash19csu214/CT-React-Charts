@@ -34,6 +34,11 @@ class Header extends Component {
             </NavbarBrand>
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav navbar className="offset-2">
+              <NavItem>
+                  <NavLink className="nav-link" to="/home">
+                    <span className="fa fa-home fa-lg mt-2"> Home</span>
+                  </NavLink>
+                </NavItem>
                 <NavItem>
                   <NavLink className="nav-link" to="/bar">
                     <span className="fa fa-home fa-lg mt-2"> Bar Chart</span>

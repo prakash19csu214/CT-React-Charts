@@ -9,10 +9,7 @@ export class Pie extends Component {
       <>
         <div className="container">
           <div className="row my-5">
-            <div className="col-12 my-2">
-              <Table />
-            </div>
-            <div className="col-12 my-2">
+            <div className="col-12 my-2 d-flex justify-content-center">
             <PDChart chartType="pie"/>
             </div>
           </div>

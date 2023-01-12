@@ -8,10 +8,7 @@ export default class Donut extends Component {
       <>
         <div className="container">
           <div className="row my-5">
-            <div className="col-12 col-lg-5">
-              <Table />
-            </div>
-            <div className="col-12 offset-lg-2 col-lg-5">
+            <div className="col-12 my-2 d-flex justify-content-center">
             <PDChart chartType="donut"/>
             </div>
           </div>

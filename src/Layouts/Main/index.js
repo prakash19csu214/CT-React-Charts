@@ -6,6 +6,7 @@ import Bar from "../../Pages/BarPage";
 import Line from "../../Pages/LinePage";
 import Donut from "../../Pages/DonutPage";
 import Pie from "../../Pages/PiePage";
+import Home from "../../Pages/Home";
 
 const GetData = createContext();
 
@@ -39,6 +40,7 @@ export class Main extends Component {
         <Header />
         <GetData.Provider value={data}>
         <Switch>
+          <Route path="/home" component={Home} />
           <Route path="/bar" component={Bar} />
           <Route path="/line" component={Line} />
           <Route path="/donut" component={Donut} />

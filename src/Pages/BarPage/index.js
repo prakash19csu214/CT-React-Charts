@@ -9,9 +9,6 @@ export default class Bar extends Component {
         <div className="container">
           <div className="row my-5">
             <div className="col-12 my-2">
-              <Table />
-            </div>
-            <div className="col-12 my-2">
               <MyChart chartType="bar"/>
             </div>
           </div>

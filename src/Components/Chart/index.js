@@ -31,7 +31,7 @@ function MyChart({chartType}) {
 
   return (
     <>
-    <div className="heading my-2">Chart</div>
+    <div className="heading my-2">{chartType} chart</div>
     <div style={{'overflow-x': 'scroll'}}>
       {chartData.series && 
         <Chart options={chartData.options} series={chartData.series} type={chartType} width="5000px" height="500px" />

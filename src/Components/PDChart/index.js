@@ -37,7 +37,7 @@ function PDChart({chartType}) {
 
   return (
     <>
-    <div className="heading my-2">Chart</div>
+    <div className="heading my-2">{chartType} chart</div>
     <div style={{'overflow-x': 'scroll'}}>
       {chartData.series && 
         <Chart options={chartData} series={chartData.series} type={chartType} width="500px" height="500px" />
