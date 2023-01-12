@@ -21,7 +21,7 @@ function Table(props) {
             <th scope="col">Average Daily Wind Speed</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="text-center">
         {data.map(item => (
                     <tr key={item.date}>
                       <th scope="row">{item.date}</th>

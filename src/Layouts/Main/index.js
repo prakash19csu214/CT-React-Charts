@@ -37,9 +37,9 @@ export default class Main extends Component {
         <Header />
         <Switch>
           <Route path="/bar" render={(props) => <Bar {...props} props={data} />} />
-          <Route path="/line" component={Line} />
-          <Route path="/donut" component={Donut} />
-          <Route path="/pie" component={Pie} />
+          <Route path="/line" render={(props) => <Line {...props} props={data} />} />
+          <Route path="/donut" render={(props) => <Donut {...props} props={data} />} />
+          <Route path="/pie" render={(props) => <Pie {...props} props={data} />} />
           <Redirect to="/bar" />
         </Switch>
         <Footer />
