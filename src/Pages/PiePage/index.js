@@ -12,7 +12,7 @@ export class Pie extends Component {
               <Table />
             </div>
             <div className="col-12 my-2">
-              <MyChart />
+            <MyChart chartType="pie"/>
             </div>
           </div>
         </div>

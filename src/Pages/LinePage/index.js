@@ -12,7 +12,7 @@ export class Line extends Component {
               <Table />
             </div>
             <div className="col-12 my-2">
-              <MyChart />
+            <MyChart chartType="line"/>
             </div>
           </div>
         </div>

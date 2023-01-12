@@ -2,10 +2,9 @@ import React, { useState, useEffect, useContext } from 'react';
 import Chart from 'react-apexcharts';
 import { GetData } from '../../Layouts/Main';
 
-function MyChart(props) {
+function MyChart({chartType}) {
 
   const ddata = useContext(GetData);
-  console.log(ddata)
   const data = ddata.slice(0, 100);
 
 
@@ -35,7 +34,7 @@ function MyChart(props) {
     <div className="heading my-2">Chart</div>
     <div style={{'overflow-x': 'scroll'}}>
       {chartData.series && 
-        <Chart options={chartData.options} series={chartData.series} type="bar" width="5000px" height="500px" />
+        <Chart options={chartData.options} series={chartData.series} type={chartType} width="5000px" height="500px" />
       }
     </div>
     </>

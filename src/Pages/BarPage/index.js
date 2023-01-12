@@ -12,7 +12,7 @@ export default class Bar extends Component {
               <Table />
             </div>
             <div className="col-12 my-2">
-              <MyChart />
+              <MyChart chartType="bar"/>
             </div>
           </div>
         </div>
