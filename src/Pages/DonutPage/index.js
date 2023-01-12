@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Chart from "../../Components/Chart";
+import MyChart from "../../Components/Chart";
 import Table from "../../Components/Table";
 
 export default class Donut extends Component {
@@ -15,7 +15,7 @@ export default class Donut extends Component {
               <Table props={props} />
             </div>
             <div className="col-12 my-2">
-              <Chart />
+            <MyChart props={props} />
             </div>
           </div>
         </div>
